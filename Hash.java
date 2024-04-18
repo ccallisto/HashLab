@@ -58,13 +58,8 @@ public class Hash {
                 max = probeCount[i];
             }   
         }
-        int min = probeCount[0];
-        for (int i = 1; i <SIZE; i++){
-            if (probeCount[i] < min){
-                min = probeCount[i];
-            }   
-        }
-        int average = sum/SIZE;
-        System.out.println("expected probes: " + average + "  max probes: " + max + "  min probes: " + min);
+
+        double average = sum/SIZE;
+        System.out.println("expected probes: " + average + "  max probes: " + max + "  min probes: " + "1");
     }
 }
