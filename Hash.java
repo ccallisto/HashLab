@@ -16,7 +16,6 @@ public class Hash {
     }
 
 
-
     public static void hash1(File file, String filePath){
         burrHash burrisHash = new burrHash();
         try (Scanner scanner = new Scanner(file)) {

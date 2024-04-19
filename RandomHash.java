@@ -2,8 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Random;
-//implement random probing in seprate file
-
+//this is going to be burris's hash just with random probing
 public class RandomHash{
     public static void main(String[] args) {
 
