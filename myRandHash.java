@@ -4,11 +4,11 @@ public class myRandHash {
 
     private record HashEntry(String line, int probeCount, int initialIndex) {}
 
-    rNumGen randomGenerator = new rNumGen(7); // Assuming a suitable number of bits for the table size
+    rNumGen randomGenerator = new rNumGen(7);
 
     private char safeCharAt(String str, int index) {
         if (str.charAt(index) == ' ') {
-            return 0; // Return 0 if the index is out of bounds
+            return 0;
         }
         return str.charAt(index);
     }
@@ -19,6 +19,7 @@ public class myRandHash {
 
     public void insert(String line) {
         HashEntry[] tempHashTable = new HashEntry[SIZE];
+        //effectively i have verified that the hash table will not run into errors before commiting it to the real table
         System.arraycopy(hashTable, 0, tempHashTable, 0, SIZE);
         int hash = 0;
         for (int i = 0; i < line.length(); i++) {
@@ -29,7 +30,7 @@ public class myRandHash {
         int initialRes = result;
         int countProbes = 1;
         while (tempHashTable[result] != null) {
-            result = (result + randomGenerator.uniqueRandInteger()) % SIZE; // Use uniqueRandInteger for random probing
+            result = (result + randomGenerator.uniqueRandInteger()) % SIZE;
             countProbes++;
         }
         tempHashTable[result] = new HashEntry(line, countProbes, initialRes);

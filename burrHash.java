@@ -6,7 +6,7 @@ public class burrHash {
 
     private char safeCharAt(String str, int index) {
         if (str.charAt(index) == ' ') {
-            return 0; // Return 0 if the index is out of bounds
+            return 0; 
         }
         return str.charAt(index);
     }

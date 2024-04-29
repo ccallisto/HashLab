@@ -8,12 +8,10 @@ public class RandomBurrHash {
     
     private char safeCharAt(String str, int index) {
         if (str.charAt(index) == ' ') {
-            return 0; // Return 0 if the index is out of bounds
+            return 0; 
         }
         return str.charAt(index);
     }
-
-
     
     public RandomBurrHash() {
         randomGenerator.initialRandInteger();
@@ -25,12 +23,9 @@ public class RandomBurrHash {
         int initialRes = result;
 
         while (hashTable[result] != null) {
-            result = (result + randomGenerator.uniqueRandInteger()) % SIZE; // Use uniqueRandInteger for the probe step
+            result = (result + randomGenerator.uniqueRandInteger()) % SIZE;
             countProbes++;
-            if (result == initialRes) { // Check for a full table should be added here ideally
-                System.out.println("Hash table is full, unable to insert more items.");
-                return;
-            }
+
         }
 
         hashTable[result] = new HashEntry(line, countProbes, initialRes);
