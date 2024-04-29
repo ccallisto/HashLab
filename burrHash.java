@@ -5,22 +5,35 @@ public class burrHash{
     int[] probeCount = new int[SIZE];
     
     
-    public void insert(String line){
-        result = Math.abs((line.charAt(1) + ((line.charAt(3) + line.charAt(4) + line.charAt(6) + line.charAt(7)) / 381 + line.charAt(0)) / 587 - line.charAt(10))) % SIZE;
-        int countProbes;  
+    private char safeCharAt(String str, int index) {
+        if (str.charAt(index) == ' ') {
+            return 0; // Return 0 if the index is out of bounds
+        }
+        return str.charAt(index);
+    }
+
+    public void insert(String line) {
+        int hash = safeCharAt(line, 1) 
+            + ((safeCharAt(line, 3) + safeCharAt(line, 4) 
+                + safeCharAt(line, 6) + safeCharAt(line, 7)) / 381 
+            + safeCharAt(line, 0)) / 587 
+            - (safeCharAt(line, 10));
+        result = Math.abs(hash) % SIZE;
+        
         int startIndex = result;
-        countProbes = 1;
+        int countProbes = 1;
         while (hashTable[result] != null) {
             result = (result + 1) % SIZE;
-            countProbes++; 
+            countProbes++;
             if (result == startIndex) {
                 System.out.println("Hash table is full, unable to insert more items.");
+                return; // Exit the method if the table is full
             }
         }
         hashTable[result] = line;
-        probeCount[result] = countProbes; 
-
+        probeCount[result] = countProbes;
     }
+
     public String getHashVal(int i){
 
         return hashTable[i];

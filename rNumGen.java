@@ -1,10 +1,9 @@
 public class rNumGen {
-    private int numBits;
+    final private int numBits;
     private int r = 1;
 
-    public void URandInt(int numBits) {
+    public rNumGen(int numBits) {
         this.numBits = numBits;
-
     }
 
     public void initialRandInteger() {
