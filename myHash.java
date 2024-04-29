@@ -3,6 +3,7 @@ public class myHash {
     String[] hashTable = new String[SIZE];
     int result;
     int[] probeCount = new int[SIZE];
+    int[] initialResult = new int[SIZE];
 
     // barrel shifter function
     private int leftCircularShift(int n, int d) {
@@ -22,7 +23,7 @@ public class myHash {
             hash = (hash + shifted) % SIZE;
         }
         result = Math.abs(hash) % SIZE;
-
+        int initialRes = result;
         int countProbes = 1;
         int startIndex = result;
         while (hashTable[result] != null) {
@@ -35,6 +36,7 @@ public class myHash {
         }
         hashTable[result] = line;
         probeCount[result] = countProbes;
+        initialResult[result] = initialRes;
     }
 
     public String getHashVal(int i) {
@@ -43,5 +45,8 @@ public class myHash {
 
     public int getProbes(int i) {
         return probeCount[i];
+    }
+    public int getInit(int i){
+        return initialResult[i];
     }
 }

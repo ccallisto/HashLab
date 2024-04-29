@@ -2,6 +2,8 @@ public class RandomBurrHash {
     final int SIZE = 128;
     String[] hashTable = new String[SIZE];
     int[] probeCount = new int[SIZE];
+    int[] initialResult = new int[SIZE];
+
     rNumGen randomGenerator = new rNumGen(7);
     private char safeCharAt(String str, int index) {
         if (str.charAt(index) == ' ') {
@@ -16,13 +18,18 @@ public class RandomBurrHash {
     public void insert(String line) {
         int result = Math.abs((safeCharAt(line, 1) + ((safeCharAt(line, 3) + safeCharAt(line, 4) + safeCharAt(line, 6) + safeCharAt(line, 7)) / 381 + safeCharAt(line, 0)) / 587 - safeCharAt(line, 10))) % SIZE;
         int countProbes = 1;
+        int initialRes = result;
+
         while (hashTable[result] != null) {
             result = (result + randomGenerator.uniqueRandInteger()) % SIZE; // Use uniqueRandInteger for the probe step
+
             countProbes++;
         }
         if (hashTable[result] == null) {
             hashTable[result] = line;
             probeCount[result] = countProbes;
+            initialResult[result] = initialRes;
+
         }
     }
 
@@ -32,5 +39,9 @@ public class RandomBurrHash {
 
     public int getProbes(int i) {
         return probeCount[i];
+
+    }
+    public int getInit(int i){
+        return initialResult[i];
     }
 }

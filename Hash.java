@@ -13,8 +13,8 @@ public class Hash {
         String filePath = "output.csv";
         File file = new File("input.txt");
 
-    hash1(file, filePath); //burris hash linear
-//    hash2(file, filePath); //my hash linear
+    // hash1(file, filePath); //burris hash linear
+   hash2(file, filePath); //my hash linear
 //    hash3(file, filePath); //burris hash rando
 //    hash4(file, filePath); //my hash random
     }
@@ -76,7 +76,7 @@ public class Hash {
             for (int i = 0; i < SIZE; i++) {
                 if (myHash.getHashVal(i) != null) {
                     writer.printf("%3d,%-16s,%d\n", i, myHash.getHashVal(i), myHash.getProbes(i));
-                    System.out.printf("Index %3d: %-16s, Probes: %d\n", i, myHash.getHashVal(i), myHash.getProbes(i));
+                    System.out.printf("Index %3d: %-16s, Probes: %d,   InitialProbe: %d\n",  i, myHash.getHashVal(i), myHash.getProbes(i), myHash.getInit(i));
                 }
             }
         } catch (IOException e) {

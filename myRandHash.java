@@ -2,6 +2,8 @@ public class myRandHash {
     final int SIZE = 128;
     String[] hashTable = new String[SIZE];
     int[] probeCount = new int[SIZE];
+    int[] initialResult = new int[SIZE];
+
     rNumGen randomGenerator = new rNumGen(7); // Assuming a suitable number of bits for the table size
     private char safeCharAt(String str, int index) {
         if (str.charAt(index) == ' ') {
@@ -20,7 +22,7 @@ public class myRandHash {
         int shifted = leftCircularShift(safeCharAt(line, i), i % 32);            hash = (hash + shifted) % SIZE;
         }
         int result = Math.abs(hash) % SIZE;
-
+        int initialRes = result;
         int countProbes = 1;
         while (hashTable[result] != null) {
             result = (result + randomGenerator.uniqueRandInteger()) % SIZE; // Use uniqueRandInteger for random probing
@@ -28,6 +30,8 @@ public class myRandHash {
         }
         hashTable[result] = line;
         probeCount[result] = countProbes;
+        initialResult[result] = initialRes;
+
     }
 
     public String getHashVal(int i) {
@@ -36,5 +40,8 @@ public class myRandHash {
 
     public int getProbes(int i) {
         return probeCount[i];
+    }
+    public int getInit(int i){
+        return initialResult[i];
     }
 }

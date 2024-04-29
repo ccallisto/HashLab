@@ -3,7 +3,8 @@ public class burrHash{
     String[] hashTable = new String[SIZE];
     int result;
     int[] probeCount = new int[SIZE];
-    
+    int[] initialResult = new int[SIZE];
+
     
     private char safeCharAt(String str, int index) {
         if (str.charAt(index) == ' ') {
@@ -32,6 +33,8 @@ public class burrHash{
         }
         hashTable[result] = line;
         probeCount[result] = countProbes;
+        initialResult[result] = startIndex;
+
     }
 
     public String getHashVal(int i){
@@ -41,5 +44,8 @@ public class burrHash{
 
     public int getProbes(int i){
         return probeCount[i];
+    }
+    public int getInit(int i){
+        return initialResult[i];
     }
 }
