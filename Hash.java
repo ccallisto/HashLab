@@ -13,10 +13,10 @@ public class Hash {
         String filePath = "output.csv";
         File file = new File("input.txt");
 
-    //    hash1(file, filePath); //burris hash linear
-//        hash2(file, filePath); //my hash linear
-//        hash3(file, filePath); //burris hash random
-    //    hash4(file, filePath); //my hash random
+    hash1(file, filePath); //burris hash linear
+//    hash2(file, filePath); //my hash linear
+//    hash3(file, filePath); //burris hash rando
+//    hash4(file, filePath); //my hash random
     }
 
 
@@ -65,6 +65,7 @@ public class Hash {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 myHash.insert(line);
+                
             }
         } catch (FileNotFoundException e) {
             System.out.println("Failed to open file.");

@@ -22,14 +22,9 @@ public class myRandHash {
         int result = Math.abs(hash) % SIZE;
 
         int countProbes = 1;
-        int startIndex = result;
         while (hashTable[result] != null) {
             result = (result + randomGenerator.uniqueRandInteger()) % SIZE; // Use uniqueRandInteger for random probing
             countProbes++;
-            if (result == startIndex) {
-                System.out.println("Hash table is full, unable to insert more items.");
-                return;
-            }
         }
         hashTable[result] = line;
         probeCount[result] = countProbes;

@@ -15,15 +15,10 @@ public class RandomBurrHash {
 
     public void insert(String line) {
         int result = Math.abs((safeCharAt(line, 1) + ((safeCharAt(line, 3) + safeCharAt(line, 4) + safeCharAt(line, 6) + safeCharAt(line, 7)) / 381 + safeCharAt(line, 0)) / 587 - safeCharAt(line, 10))) % SIZE;
-        int startIndex = result;
         int countProbes = 1;
         while (hashTable[result] != null) {
             result = (result + randomGenerator.uniqueRandInteger()) % SIZE; // Use uniqueRandInteger for the probe step
             countProbes++;
-            if (result == startIndex) {
-                System.out.println("Hash table is full, unable to insert more items.");
-                break; // Added break to prevent endless loop if table is full
-            }
         }
         if (hashTable[result] == null) {
             hashTable[result] = line;
