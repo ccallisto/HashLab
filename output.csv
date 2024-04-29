@@ -1,101 +1,100 @@
 Index, Item, Probes,
-  0,Dustin          ,12
-  1,1234567890123456,1
-  2,Robert          ,20
-  3,Kyle            ,11
-  4,Scott           ,34
-  5,Octavio         ,35
-  6,Judy            ,18
-  7,Derek           ,35
-  8,Jeffrey         ,36
-  9,ABCDEFGHIJKLMNOP,1
- 10,Jordon          ,28
- 11,Vinnela         ,35
- 12,Lisa            ,36
- 13,Todd            ,31
- 14,Veronica        ,42
- 15,Matthew         ,47
- 16,Michael         ,40
- 17,Akhila          ,39
- 18,John            ,36
- 19,Charles         ,44
- 20,James           ,52
- 21,Chris           ,46
- 22,Wade            ,54
- 23,Christopher     ,14
- 24,Fernando        ,52
- 25,Batbold         ,57
- 26,Joel            ,44
- 27,Fabulous        ,59
- 28,Misogamist      ,52
- 29,Maiden          ,61
- 30,Eye             ,38
- 31,Constriction    ,32
- 32,Necromancer     ,20
- 33,Syncopate       ,41
- 34,Yolk            ,52
- 35,Afterwards      ,62
- 36,Person          ,64
- 37,Northwest       ,55
- 38,Irreversible    ,33
- 39,Fabricate       ,71
- 40,Honor           ,58
- 41,Staple          ,54
- 42,Under           ,61
- 43,Jutty           ,55
- 44,Finagle         ,68
- 45,Cook            ,63
- 46,Rush            ,58
- 47,Wine            ,71
- 48,Screen          ,78
- 49,Perfect         ,77
- 50,mole            ,68
- 51,parasympathetic ,45
- 52,poison          ,70
- 53,brutalize       ,68
- 54,cap             ,86
- 55,ratiocination   ,48
- 56,cauldron        ,88
- 57,prepossess      ,72
- 58,wince           ,82
- 59,orthodontist    ,59
- 60,live            ,84
- 61,magnetic        ,93
- 62,inlet           ,81
- 63,constrain       ,81
- 64,marsupial       ,96
- 65,rationalize     ,62
- 66,scat            ,96
- 67,toluene         ,85
- 68,wet             ,96
- 97,Carmona         ,1
- 98,Casper          ,2
- 99,Daniels         ,3
-100,Paschal         ,4
-101,Red             ,1
-102,Salkowski       ,6
-103,Aguirrie        ,1
-104,Bhandari        ,1
-105,Nienberg        ,1
-106,Qamruddin       ,10
-107,Acevedo         ,9
-108,Alcantara       ,1
-109,Ajose           ,4
-110,Clark           ,3
-111,Cook            ,1
-112,Davies          ,16
-113,Egbe            ,11
-114,Arauza          ,1
-115,Crouch          ,2
-116,Ellington       ,9
-117,Zulfiqar        ,1
-118,Buck            ,2
-119,Dugger          ,3
-120,Farral          ,24
-121,Garza           ,25
-122,Gurung          ,6
-123,Joseph          ,13
-124,Kelly           ,24
-125,Corey           ,15
-126,Adam            ,27
-127,Clayton         ,20
+  0,Robert          ,1
+  2,Fabulous        ,4
+  3,marsupial       ,2
+  4,Necromancer     ,1
+  6,parasympathetic ,2
+  7,Clayton         ,1
+  8,Jutty           ,4
+  9,Under           ,1
+ 10,brutalize       ,1
+ 12,Judy            ,1
+ 14,orthodontist    ,7
+ 16,Buck            ,1
+ 17,Arauza          ,1
+ 18,Dugger          ,1
+ 19,Christopher     ,1
+ 20,Zulfiqar        ,1
+ 21,Kyle            ,1
+ 22,Daniels         ,1
+ 23,Paschal         ,2
+ 24,James           ,1
+ 25,Screen          ,1
+ 26,Batbold         ,6
+ 27,Michael         ,1
+ 28,Joseph          ,1
+ 29,Irreversible    ,1
+ 30,Joel            ,5
+ 31,Staple          ,1
+ 32,Veronica        ,1
+ 33,Corey           ,1
+ 35,mole            ,1
+ 37,Carmona         ,1
+ 38,constrain       ,3
+ 39,Qamruddin       ,1
+ 41,Person          ,3
+ 42,Matthew         ,2
+ 44,Red             ,1
+ 45,Salkowski       ,1
+ 46,Derek           ,1
+ 48,Cook            ,3
+ 49,Garza           ,1
+ 51,Misogamist      ,1
+ 52,Northwest       ,1
+ 53,Cook            ,1
+ 54,wet             ,2
+ 56,John            ,1
+ 57,Ajose           ,1
+ 58,poison          ,1
+ 59,Crouch          ,1
+ 60,Eye             ,3
+ 61,cauldron        ,4
+ 62,live            ,1
+ 63,Yolk            ,1
+ 64,Jordon          ,1
+ 65,ABCDEFGHIJKLMNOP,1
+ 66,Perfect         ,1
+ 67,Egbe            ,1
+ 69,Syncopate       ,1
+ 70,Constriction    ,3
+ 71,Charles         ,1
+ 72,Rush            ,1
+ 73,Afterwards      ,2
+ 74,rationalize     ,12
+ 75,Aguirrie        ,1
+ 77,Alcantara       ,1
+ 79,Fernando        ,2
+ 80,Fabricate       ,1
+ 81,1234567890123456,1
+ 83,Chris           ,1
+ 84,Kelly           ,2
+ 85,Ellington       ,1
+ 86,Davies          ,1
+ 87,Akhila          ,2
+ 91,Acevedo         ,1
+ 92,Jeffrey         ,1
+ 93,inlet           ,1
+ 94,Scott           ,3
+ 95,Clark           ,1
+ 96,Vinnela         ,1
+ 97,Casper          ,1
+ 98,Todd            ,1
+ 99,Maiden          ,1
+100,Nienberg        ,1
+101,cap             ,1
+102,Bhandari        ,1
+103,Gurung          ,2
+104,Wade            ,3
+105,wince           ,1
+106,Dustin          ,1
+110,Finagle         ,2
+111,Octavio         ,2
+112,Farral          ,1
+114,Lisa            ,1
+117,Adam            ,1
+118,Honor           ,1
+119,scat            ,6
+120,prepossess      ,1
+122,toluene         ,1
+123,ratiocination   ,3
+124,magnetic        ,3

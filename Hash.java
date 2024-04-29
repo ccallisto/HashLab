@@ -14,9 +14,9 @@ public class Hash {
         File file = new File("input.txt");
 
     hash1(file, filePath); //burris hash linear
-//    hash2(file, filePath); //my hash linear
-//    hash3(file, filePath); //burris hash rando
-//    hash4(file, filePath); //my hash random
+   hash2(file, filePath); //my hash linear
+   hash3(file, filePath); //burris hash rando
+   hash4(file, filePath); //my hash random
     }
 
 
