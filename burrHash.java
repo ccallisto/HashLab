@@ -25,10 +25,9 @@ public class burrHash {
         int concatenatedValue34 = concatenateDigits(char3, char4);
         int concatenatedValue67 = concatenateDigits(char6, char7);
         // Compute the hash using the modified value
-        int hash = safeCharAt(line, 1) 
-            + (concatenatedValue34 + concatenatedValue67) / 381 
-            + safeCharAt(line, 0) / 587 
-            - safeCharAt(line, 10);
+        
+        
+        int hash = safeCharAt(line, 1) + (concatenatedValue34 + concatenatedValue67) / 381 + safeCharAt(line, 0) / 587 - safeCharAt(line, 10);
         int result = Math.abs(hash) % SIZE;
         
         int startIndex = result;
