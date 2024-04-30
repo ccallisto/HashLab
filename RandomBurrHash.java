@@ -7,8 +7,8 @@ public class RandomBurrHash {
     rNumGen randomGenerator = new rNumGen(7);
     
     private char safeCharAt(String str, int index) {
-        if (str.charAt(index) == ' ') {
-            return 0; 
+        if (index >= str.length() || str.charAt(index) == ' ') {
+            return 0;
         }
         return str.charAt(index);
     }
@@ -21,15 +21,20 @@ public class RandomBurrHash {
     }
 
     public void insert(String line) {
+        char char0 = safeCharAt(line, 0);
+        char char1 = safeCharAt(line, 1);
         char char3 = safeCharAt(line, 3);
         char char4 = safeCharAt(line, 4);
         char char6 = safeCharAt(line, 6);
         char char7 = safeCharAt(line, 7);
-        int concatenatedValue34 = concatenateDigits(char3, char4);
-        int concatenatedValue67 = concatenateDigits(char6, char7);
+        int c34 = concatenateDigits(char3, char4);
+        int c67 = concatenateDigits(char6, char7);
+        int c00 = concatenateDigits(char0, char0);
+        int c11 = concatenateDigits(char1, char1);
 
+        //all characters in your hash function were shifted by 1 digit due to java arrays beginning at 0
 
-        int hash = safeCharAt(line, 1) + (concatenatedValue34 + concatenatedValue67) / 381 + safeCharAt(line, 0) / 587 - safeCharAt(line, 10);
+        int hash = c11 + ((c34 + c67) / 381 + c00 )/ 587 - safeCharAt(line, 10);
         int result = Math.abs(hash) % SIZE;
         int countProbes =1;
         int initialRes=result;

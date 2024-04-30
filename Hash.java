@@ -8,7 +8,7 @@ public class Hash {
         String inputPath = "input.txt";
         String outputPath = "output.csv";
 
-        // hash1(inputPath, outputPath); // burris hash linear
+        hash1(inputPath, outputPath); // burris hash linear
         // hash2(inputPath, outputPath); // my hash linear
         // hash3(inputPath, outputPath); // burris hash random
         // hash4(inputPath, outputPath); // my hash random
