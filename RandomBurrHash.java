@@ -12,16 +12,30 @@ public class RandomBurrHash {
         }
         return str.charAt(index);
     }
-    
+    private int concatenateDigits(char a, char b) {
+        String asciiConcatenation = "" + ((int) a) + ((int) b);
+        return Integer.parseInt(asciiConcatenation);
+    }
     public RandomBurrHash() {
         randomGenerator.initialRandInteger();
     }
 
     public void insert(String line) {
-        int result = Math.abs((safeCharAt(line, 1) + ((safeCharAt(line, 3) + safeCharAt(line, 4) + safeCharAt(line, 6) + safeCharAt(line, 7)) / 381 + safeCharAt(line, 0)) / 587 - safeCharAt(line, 10))) % SIZE;
-        int countProbes = 1;
-        int initialRes = result;
-
+        // Ensure that characters at positions 3 and 4 are digits or treated as '0'
+        char char3 = safeCharAt(line, 3);
+        char char4 = safeCharAt(line, 4);
+        char char6 = safeCharAt(line, 6);
+        char char7 = safeCharAt(line, 7);
+        int concatenatedValue34 = concatenateDigits(char3, char4);
+        int concatenatedValue67 = concatenateDigits(char6, char7);
+        // Compute the hash using the modified value
+        int hash = safeCharAt(line, 1) 
+            + (concatenatedValue34 + concatenatedValue67) / 381 
+            + safeCharAt(line, 0) / 587 
+            - safeCharAt(line, 10);
+        int result = Math.abs(hash) % SIZE;
+        int countProbes =1;
+        int initialRes=result;
         while (hashTable[result] != null) {
             result = (result + randomGenerator.uniqueRandInteger()) % SIZE;
             countProbes++;

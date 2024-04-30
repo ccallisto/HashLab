@@ -1,100 +1,102 @@
-Index, Item, Probes,
-  0,Fernando        ,4
-  1,1234567890123456,1
-  3,Veronica        ,2
-  4,Rush            ,2
-  6,Daniels         ,3
-  7,parasympathetic ,1
-  8,ratiocination   ,1
-  9,ABCDEFGHIJKLMNOP,1
- 10,Christopher     ,1
- 11,marsupial       ,5
- 13,Necromancer     ,1
- 14,John            ,3
- 15,live            ,2
- 16,Wade            ,2
- 17,Jordon          ,2
- 18,scat            ,3
- 20,Vinnela         ,2
- 22,Gurung          ,3
- 23,poison          ,2
- 24,Under           ,5
- 25,rationalize     ,7
- 28,prepossess      ,2
- 29,Robert          ,2
- 31,Davies          ,2
- 32,Person          ,3
- 34,orthodontist    ,2
- 35,Qamruddin       ,2
- 37,Cook            ,2
- 38,toluene         ,10
- 40,Todd            ,2
- 42,mole            ,2
- 43,Charles         ,2
- 44,Dugger          ,2
- 48,Misogamist      ,2
- 49,James           ,2
- 51,Jeffrey         ,5
- 52,Joseph          ,3
- 53,Wine            ,2
- 54,cauldron        ,2
- 55,Joel            ,2
- 56,Eye             ,3
- 57,Syncopate       ,2
- 58,cap             ,4
- 59,brutalize       ,2
- 60,Batbold         ,2
- 62,Northwest       ,3
- 64,Buck            ,2
- 65,Lisa            ,2
- 68,Garza           ,2
- 69,Maiden          ,2
- 70,Derek           ,2
- 72,Jutty           ,3
- 73,Irreversible    ,3
- 74,Scott           ,2
- 75,Crouch          ,2
- 77,constrain       ,2
- 79,Chris           ,3
- 81,Ellington       ,2
- 82,Judy            ,4
- 84,Clayton         ,2
- 86,magnetic        ,6
- 87,Perfect         ,2
- 88,Fabulous        ,3
- 90,Finagle         ,2
- 91,Farral          ,2
- 92,wince           ,3
- 93,Michael         ,2
- 94,Corey           ,3
- 95,Adam            ,2
- 96,Screen          ,2
- 97,Carmona         ,1
- 98,Casper          ,2
- 99,Acevedo         ,1
-100,Clark           ,2
-101,Red             ,1
-102,Afterwards      ,1
-103,Aguirrie        ,1
-104,Bhandari        ,1
-105,Nienberg        ,1
-106,Ajose           ,1
-107,Akhila          ,1
-108,Alcantara       ,1
-109,Honor           ,2
-110,Salkowski       ,2
-111,Cook            ,1
-113,Kelly           ,2
-114,Arauza          ,1
-115,Constriction    ,2
-116,Staple          ,1
-117,Zulfiqar        ,1
-118,Yolk            ,3
-120,Matthew         ,2
-121,Kyle            ,1
-122,Fabricate       ,2
-123,Egbe            ,2
-124,Octavio         ,3
-125,Paschal         ,2
-126,Dustin          ,2
-127,inlet           ,3
+Index, Item, Probes, Initial
+  0,Kelly           ,1,0
+  1,Carmona         ,1,1
+  2,mole            ,7,113
+  3,Dugger          ,1,3
+  4,Chris           ,2,123
+  5,Rush            ,2,119
+  7,Casper          ,1,7
+  8,Egbe            ,2,105
+  9,orthodontist    ,5,51
+ 10,Necromancer     ,2,29
+ 11,Fabricate       ,1,11
+ 12,Vinnela         ,1,12
+ 14,Aguirrie        ,1,14
+ 16,Crouch          ,1,16
+ 17,Wade            ,2,99
+ 18,Honor           ,1,18
+ 19,Qamruddin       ,1,19
+ 20,Matthew         ,1,20
+ 21,marsupial       ,2,42
+ 22,Charles         ,1,22
+ 23,Clark           ,1,23
+ 24,Ajose           ,1,24
+ 26,Staple          ,1,26
+ 27,ABCDEFGHIJKLMNOP,1,27
+ 28,Acevedo         ,2,27
+ 29,1234567890123456,1,29
+ 30,cauldron        ,2,32
+ 31,Finagle         ,4,106
+ 32,Gurung          ,2,40
+ 33,parasympathetic ,2,22
+ 34,Todd            ,2,113
+ 35,John            ,2,113
+ 36,brutalize       ,1,36
+ 37,Arauza          ,1,37
+ 38,rationalize     ,2,14
+ 39,Scott           ,2,19
+ 40,Salkowski       ,1,40
+ 41,Northwest       ,1,41
+ 42,Misogamist      ,1,42
+ 43,constrain       ,3,28
+ 44,Clayton         ,1,44
+ 45,Christopher     ,1,45
+ 47,Robert          ,2,120
+ 48,Ellington       ,1,48
+ 49,Nienberg        ,1,49
+ 50,Wine            ,2,107
+ 51,Jutty           ,5,37
+ 52,Bhandari        ,1,52
+ 54,wet             ,2,101
+ 56,ratiocination   ,2,31
+ 57,inlet           ,5,119
+ 58,Person          ,6,19
+ 61,prepossess      ,2,70
+ 62,Yolk            ,3,113
+ 64,toluene         ,8,37
+ 65,Jeffrey         ,4,116
+ 66,live            ,4,107
+ 68,Michael         ,2,7
+ 69,Joel            ,4,113
+ 70,Afterwards      ,2,110
+ 71,Fabulous        ,1,71
+ 72,Maiden          ,4,103
+ 73,Constriction    ,1,73
+ 74,Perfect         ,6,116
+ 76,Garza           ,2,1
+ 77,James           ,3,106
+ 81,Corey           ,2,120
+ 85,poison          ,2,29
+ 87,Irreversible    ,3,58
+ 88,Under           ,3,119
+ 90,Cook            ,2,113
+ 93,Judy            ,2,120
+ 94,magnetic        ,15,29
+ 95,scat            ,2,102
+ 97,cap             ,1,97
+ 99,Dustin          ,2,37
+100,Octavio         ,1,100
+101,Red             ,1,101
+102,Adam            ,1,102
+103,Paschal         ,1,103
+104,Batbold         ,4,101
+105,Alcantara       ,1,105
+106,Farral          ,4,127
+107,Lisa            ,1,107
+108,Screen          ,1,108
+109,wince           ,1,109
+110,Derek           ,1,110
+111,Fernando        ,2,8
+113,Cook            ,1,113
+115,Veronica        ,4,34
+116,Davies          ,1,116
+117,Jordon          ,1,117
+119,Daniels         ,1,119
+120,Joseph          ,1,120
+121,Eye             ,1,121
+123,Kyle            ,1,123
+124,Syncopate       ,1,124
+125,Buck            ,2,119
+126,Akhila          ,1,126
+127,Zulfiqar        ,1,127
+,10,118
